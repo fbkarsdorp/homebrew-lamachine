@@ -1,4 +1,4 @@
-class TimblServer < Formula
+class Timblserver < Formula
   desc "Memory-based learning algorithms"
   homepage "https://ilk.uvt.nl/timblserver/"
   url "https://github.com/LanguageMachines/timblserver/releases/download/v1.11/timblserver-1.11.tar.gz"
