@@ -10,11 +10,13 @@ class Frog < Formula
     depends_on "mbt"
     depends_on "ucto"
 
+    needs :cxx11
+
     def install
+        ENV.cxx11
         system "./configure", "--disable-dependency-tracking",
-                              "--disable-silent-rules",
-                              "--prefix=#{prefix}"
+                              "--prefix=#{prefix}",
+                              "--with-boost=#{Formula["boost"].opt_prefix}"
         system "make", "install"
-        system "make", "check" if build.with? "check"
-      end
+    end
 end
