@@ -11,7 +11,7 @@ $ brew install timbl # or some other package you like, such as frog
 
 ## Known Issues
 
-Please checkout [[https://github.com/fbkarsdorp/homebrew-lamachine/issues][Issues]] page for a list of all known issues.
+Please checkout [Issues](https://github.com/fbkarsdorp/homebrew-lamachine/issues) page for a list of all known issues.
 
 
 ## Acknowledgements
