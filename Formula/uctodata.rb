@@ -7,7 +7,6 @@ class Uctodata < Formula
   depends_on "pkg-config" => :build
 
   def install
-    system "bash bootstrap.sh"
     system "./configure", "--disable-dependency-tracking",
                           "--prefix=#{prefix}",
                           "--disable-silent-rules"
