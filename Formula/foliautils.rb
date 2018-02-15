@@ -1,4 +1,4 @@
-class Ucto < Formula
+class Foliautils < Formula
   desc "FoLiA Utilities"
   homepage "https://languagemachines.github.io/folia"
   url "https://github.com/LanguageMachines/foliautils/releases/download/v0.7/foliautils-0.7.tar.gz"
