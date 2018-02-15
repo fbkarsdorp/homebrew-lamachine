@@ -11,6 +11,7 @@ class Ucto < Formula
   depends_on "libfolia"
   depends_on "libxslt"
   depends_on "libxml2"
+  depends_on "uctodata"
 
   def install
     system "./configure", "--disable-dependency-tracking",
