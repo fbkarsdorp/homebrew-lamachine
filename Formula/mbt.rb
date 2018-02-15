@@ -1,6 +1,6 @@
 class Mbt < Formula
     desc "Memory-based tagger"
-    homepage "https://ilk.uvt.nl/mbt"
+    homepage "https://languagemachines.github.io/mbt"
     url "https://github.com/LanguageMachines/mbt/releases/download/v3.3.1/mbt-3.3.1.tar.gz"
     sha256 "db214309da5dfb5e134e287fa2f87e813637b1f5a5a02922291db0ac4f4b7401"
 

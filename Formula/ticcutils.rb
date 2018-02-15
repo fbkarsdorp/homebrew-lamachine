@@ -1,6 +1,6 @@
 class Ticcutils < Formula
   desc "Tools for the TiCC Software Stack"
-  homepage "https://ilk.uvt.nl/ticcutils/"
+  homepage "https://github.com/LanguageMachines/ticcutils/"
   url "https://github.com/LanguageMachines/ticcutils/releases/download/v0.17/ticcutils-0.17.tar.gz"
   sha256 "4e5ed6b66a8595f4bdb75c46458723c6a8001a570ff47c068ea4e1ff1517c8a1"
 

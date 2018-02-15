@@ -1,6 +1,6 @@
 class Frog < Formula
     desc "Frog NLP toolkit"
-    homepage "https://ilk.uvt.nl/frog"
+    homepage "https://languagemachines.github.io/frog"
     url "https://github.com/LanguageMachines/frog/releases/download/v0.13.10/frog-0.13.10.tar.gz"
     sha256 "9e68a6eab524ae973e947eb7550c0509823b4cf64fbc025675b9a568702c1116"
 
