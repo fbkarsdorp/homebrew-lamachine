@@ -13,17 +13,31 @@ class Ucto < Formula
     sha256 "aa4f105c027da6ae3040bfc0c9894392f08de23d0d8b5dcccced9aa799e256b9" => :x86_64_linux
   end
 
+  head do
+    url "https://github.com/LanguageMachines/ucto.git"
+    depends_on "autoconf" => :build
+    depends_on "automake" => :build
+  end
+
   depends_on "pkg-config" => :build
+  depends_on "libtextcat" 
   depends_on "icu4c"
   depends_on "libfolia"
   depends_on "libxslt"
   depends_on "libxml2"
 
+
   def install
+    ENV.append "CXXFLAGS", "-I#{Formula["libtextcat"].include}"
+    ENV.append "LDFLAGS", "-ltextcat"
+    
+    system "chmod +x bootstrap.sh" if build.head?
+    system "./bootstrap.sh" if build.head?
+    
     system "./configure", "--disable-dependency-tracking",
                           "--disable-silent-rules",
                           "--prefix=#{prefix}"
     system "make", "install"
-    system "make", "check" if build.with? "check"
+    system "make", "check" if build.with? "check"    
   end
 end

@@ -11,24 +11,26 @@ class Ticcutils < Formula
     sha256 "133d5fe533c76c272fbcf7c39414a1223fb007ade0486b4223445eb78a7ef52d" => :x86_64_linux
   end
 
-  depends_on "pkg-config" => :build
-  depends_on "boost"
-  depends_on "icu4c"
-
-  unless OS.mac?
-    depends_on "bzip2"
-    depends_on "libxml2"
-    depends_on "zlib"
+  head do
+    url "https://github.com/LanguageMachines/ticcutils.git"
+    depends_on "autoconf" => :build
+    depends_on "automake" => :build
   end
-
-  needs :cxx11
+  
+  depends_on "pkg-config" => :build
+  depends_on "boost" => :build
+  depends_on 'icu4c'
+  depends_on "bzip2"
+  depends_on "libxml2"
+  depends_on "zlib"
 
   def install
-    ENV.cxx11
+    system "chmod +x bootstrap.sh" if build.head?
+    system "./bootstrap.sh" if build.head?
+    
     system "./configure", "--disable-dependency-tracking",
                           "--disable-silent-rules",
-                          "--prefix=#{prefix}",
-                          "--with-boost=#{Formula["boost"].opt_prefix}"
+                          "--prefix=#{prefix}"
     system "make", "install"
   end
 end
