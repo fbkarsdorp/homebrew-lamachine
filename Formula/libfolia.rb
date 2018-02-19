@@ -9,7 +9,7 @@ class Libfolia < Formula
 
   depends_on "pkg-config" => :build
   depends_on "icu4c"
-  depends_on "ticcutils@0.18"
+  depends_on "ticcutils"
   depends_on "libxml2"
 
   def install
