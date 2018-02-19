@@ -16,7 +16,7 @@ class Libfolia < Formula
     system "./configure", "--disable-dependency-tracking",
                           "--disable-silent-rules",
                           "--prefix=#{prefix}"
-    system "make", "check" if build.with? "check"
     system "make", "install"
+    system "make", "check" if build.with? "check"    
   end
 end
