@@ -1,23 +1,28 @@
 class Frog < Formula
     desc "Frog NLP toolkit"
     homepage "https://languagemachines.github.io/frog"
-    url "https://github.com/LanguageMachines/frog/releases/download/v0.13.10/frog-0.13.10.tar.gz"
-    sha256 "9e68a6eab524ae973e947eb7550c0509823b4cf64fbc025675b9a568702c1116"
+    url "https://github.com/LanguageMachines/frog/releases/download/v0.14/frog-0.14.tar.gz"
+    sha256 "ba4aa069829d9dbab44be7aac3e2e02c7cd4a19b7ca40feb6b50e76eb755f5b3"
 
     depends_on "pkg-config" => :build
+    depends_on "icu4c"
+    depends_on "libxml2"
     depends_on "timbl"
     depends_on "timblserver"
     depends_on "mbt"
     depends_on "frogdata"
     depends_on "ucto"
 
-    needs :cxx11
-
     def install
-        ENV.cxx11
-        system "./configure", "--disable-dependency-tracking",
-                              "--prefix=#{prefix}",
-                              "--with-boost=#{Formula["boost"].opt_prefix}"
-        system "make", "install"
+      system "./configure", "--disable-dependency-tracking",
+                            "--disable-silent-rules",
+                            "--prefix=#{prefix}"
+      system "make", "install"
+    end
+
+    def caveats; <<~EOS
+      Before using frog, please link the frogdata to the correct location.
+        ln -s #{Formula["frogdata"].opt_share}/frog/ #{share}
+      EOS
     end
 end
