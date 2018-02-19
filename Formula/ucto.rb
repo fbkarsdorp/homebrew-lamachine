@@ -13,6 +13,8 @@ class Ucto < Formula
   depends_on "libfolia"
 
   def install
+    ENV.append "CXXFLAGS", "-I#{Formula["libtextcat"].opt_include}/libtextcat/"
+    ENV.append "LDFLAGS", "-ltextcat"
     system "./configure", "--disable-dependency-tracking",
                           "--disable-silent-rules",
                           "--prefix=#{prefix}"
