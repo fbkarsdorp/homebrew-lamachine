@@ -3,7 +3,14 @@
 LaMachine is a software distribution of NLP software developed by the Language Machines research group and CLST (Radboud University Nijmegen), as well as TiCC (Tilburg University). This repository provides a tap with which the software can be installed using homebrew. 
 
 ## Install
-Some example:
+
+If you still use the deprecated tap homebrew-science, now is the time to untap it:
+
+``` bash
+$ brew untap homebrew/science
+```
+
+Some examples:
 
 ```bash
 $ brew tap fbkarsdorp/homebrew-lamachine
