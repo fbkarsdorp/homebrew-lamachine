@@ -13,6 +13,7 @@ class Ticcutils < Formula
   depends_on "libtar"
 
   def install
+    ENV.append "CXXFLAGS", "-D U_USING_ICU_NAMESPACE=1"
     system "./configure", "--disable-dependency-tracking",
                           "--disable-silent-rules",
                           "--prefix=#{prefix}"

@@ -11,6 +11,7 @@ class Toad < Formula
 
     def install
         ENV.cxx11
+        ENV.append "CXXFLAGS", "-D U_USING_ICU_NAMESPACE=1"
         system "./configure", "--disable-dependency-tracking",
                               "--prefix=#{prefix}"
         system "make", "install"

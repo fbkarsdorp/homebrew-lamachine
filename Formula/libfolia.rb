@@ -13,10 +13,11 @@ class Libfolia < Formula
   depends_on "libxml2"
 
   def install
+    ENV.append "CXXFLAGS", "-D U_USING_ICU_NAMESPACE=1"
     system "./configure", "--disable-dependency-tracking",
                           "--disable-silent-rules",
                           "--prefix=#{prefix}"
     system "make", "install"
-    system "make", "check" if build.with? "check"    
+    system "make", "check" if build.with? "check"
   end
 end
