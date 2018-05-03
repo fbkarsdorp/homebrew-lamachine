@@ -18,6 +18,15 @@ $ brew install ucto  # for a fast and really accurate natural language tokenizer
 $ brew install frog
 ```
 
+## Troubleshooting
+
+All libraries and dependencies should be build with the same underlying icu4c version. When updating a specific component of lamachine fails, please first reinstall all its dependencies. For example, should the installation of ucto fail, but you already have ticcutils and libfolia installed, run:
+
+```bash
+$ brew uninstall libfolia ticcutils
+$ brew install ucto
+```
+
 ## Known Issues
 
 Please checkout the [Issues](https://github.com/fbkarsdorp/homebrew-lamachine/issues) page for a list of all known issues.
