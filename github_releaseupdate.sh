@@ -26,7 +26,7 @@ for recipe in Formula/*.rb; do
     fi
     sed -i "s|$OLDVERSION|$NEWVERSION|g" $recipe
     SHA256SUM=$(sha256sum v${NEWVERSION}.tar.gz | cut -d " " -f1)
-    rm v{$NEWVERSION}.tar.gz
+    rm v${NEWVERSION}.tar.gz
     sed -i "s/sha256\s.*/sha256 \\\"${SHA256SUM}\\\"/g" $recipe
 done
 

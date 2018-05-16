@@ -1,8 +1,8 @@
 class Ucto < Formula
   desc "Unicode tokenizer"
   homepage "https://languagemachines.github.io/ucto"
-  url "https://github.com/LanguageMachines/ucto/releases/download/v0.12/ucto-0.12.tar.gz"
-  sha256 "ab4ea68a33f01936fe5a6ee23b25b7b1b9b870cb8d6eaed7ece57f5c49e7975a"
+  url "https://github.com/LanguageMachines/ucto/releases/download/v0.13/ucto-0.13.tar.gz"
+  sha256 "f565176533b2f44f3bf7a2f75f267e80d0b2c502fa93b692d905632e68b41469"
 
   option "without-check", "skip build-time checks (not recommended)"
 
