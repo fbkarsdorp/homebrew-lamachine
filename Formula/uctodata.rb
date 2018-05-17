@@ -12,10 +12,4 @@ class Uctodata < Formula
     system "make", "install"
   end
 
-  def caveats; <<~EOS
-    To use the uctodata with ucto without specifying a complete path to
-    one of the configuration files, run this:
-      ln -s #{share}/ucto/* #{Formula["ucto"].opt_share}/ucto/
-    EOS
-  end
 end
