@@ -5,7 +5,6 @@ class Uctodata < Formula
   sha256 "ca34506f8503787da71d5f053d6a3ea5135c6ab3fd82c4127c0775c80b23fc1f"
 
   depends_on "pkg-config" => :build
-  depends_on "ucto"
 
   def install
     system "./configure", "--prefix=#{prefix}",

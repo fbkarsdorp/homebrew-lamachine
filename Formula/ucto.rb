@@ -11,6 +11,7 @@ class Ucto < Formula
   depends_on "icu4c"
   depends_on "ticcutils"
   depends_on "libfolia"
+  depends_on "uctodata"
 
   def install
     ENV.append "CXXFLAGS", "-I#{Formula["libtextcat"].opt_include}/libtextcat/ -D U_USING_ICU_NAMESPACE=1"
