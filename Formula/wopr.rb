@@ -9,7 +9,7 @@ class Wopr < Formula
     depends_on "timbl"
     depends_on "libfolia"
 
-    needy :cxx11
+    needs :cxx11
 
     def install
         ENV.cxx11
