@@ -16,6 +16,7 @@ class Wopr < Formula
     needs :cxx11
 
     def install
+        ENV.append "CXXFLAGS", "-D U_USING_ICU_NAMESPACE=1"
         ENV.cxx11
 		system "bash", "bootstrap.sh"
         system "./configure", "--disable-dependency-tracking",
