@@ -8,6 +8,8 @@ class Wopr < Formula
     depends_on "automake" => :build
     depends_on "autoconf" => :build
     depends_on "libtool" => :build
+    depends_on "icu4c"
+    depends_on "ticcutils"
     depends_on "timbl"
     depends_on "libfolia"
 
