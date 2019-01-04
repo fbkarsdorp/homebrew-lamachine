@@ -1,7 +1,7 @@
 class Ticcltools < Formula
   desc "TicclTools is a collection of programs to process datafiles"
-  url "https://github.com/LanguageMachines/ticcltools/releases/download/v0.5/ticcltools-0.5.tar.gz"
-  sha256 "7bc52a18d6b63ef40383f9944e691e77c7476503321c4e082ca2341878299c47"
+  url "https://github.com/LanguageMachines/ticcltools/releases/download/v0.6/ticcltools-0.6.tar.gz"
+  sha256 "10c243b2f45da86b4a40cb37af78b45bcd6756e5035d43af99fc47043711cdb0"
 
   depends_on "pkg-config" => :build
   depends_on "icu4c"
