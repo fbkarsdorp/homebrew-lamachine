@@ -13,6 +13,10 @@ class Ticcutils < Formula
   depends_on "libtar"
 
   def install
+    if DevelopmentTools.clang_build_version >= 900
+      ENV.delete "SDKROOT"
+      ENV.delete "HOMEBREW_SDKROOT"
+    end
     ENV.append "CXXFLAGS", "-D U_USING_ICU_NAMESPACE=1"
     system "./configure", "--disable-dependency-tracking",
                           "--disable-silent-rules",
