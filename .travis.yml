@@ -11,5 +11,8 @@ before_install:
   - brew update
 
 script:
-  - travis_wait brew install Formula/ucto.rb $BUILD_OPTIONS
+  - brew install Formula/ticcutils.rb $BUILD_OPTIONS
+  - brew install Formula/libfolia.rb $BUILD_OPTIONS
+  - brew install Formula/uctodata.rb $BUILD_OPTIONS
+  - brew install Formula/ucto.rb $BUILD_OPTIONS
   # - travis_wait brew install Formala/frog.rb $BUILD_OPTIONS
