@@ -1,0 +1,15 @@
+language: generic
+
+branches:
+  only:
+    - master
+
+os:
+  - osx
+
+before_install:
+  - brew update
+
+script:
+  - travis_wait brew install Formula/ucto.rb $BUILD_OPTIONS
+  # - travis_wait brew install Formala/frog.rb $BUILD_OPTIONS
