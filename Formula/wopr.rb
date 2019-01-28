@@ -13,8 +13,6 @@ class Wopr < Formula
     depends_on "timbl"
     depends_on "libfolia"
 
-    needs :cxx11
-
     def install
         ENV.append "CXXFLAGS", "-D U_USING_ICU_NAMESPACE=1"
         ENV.cxx11

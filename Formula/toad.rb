@@ -7,8 +7,6 @@ class Toad < Formula
     depends_on "pkg-config" => :build
     depends_on "frog"
 
-    needs :cxx11
-
     def install
         ENV.cxx11
         ENV.append "CXXFLAGS", "-D U_USING_ICU_NAMESPACE=1"

@@ -7,8 +7,6 @@ class Mbt < Formula
     depends_on "pkg-config" => :build
     depends_on "timbl"
 
-    needs :cxx11
-
     def install
         ENV.cxx11
         system "./configure", "--disable-dependency-tracking",
