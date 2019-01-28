@@ -15,4 +15,5 @@ script:
   - brew install Formula/libfolia.rb $BUILD_OPTIONS
   - brew install Formula/uctodata.rb $BUILD_OPTIONS
   - brew install Formula/ucto.rb $BUILD_OPTIONS
+  - brew install Formula/timbl.rb $BUILD_OPTIONS
   # - travis_wait brew install Formala/frog.rb $BUILD_OPTIONS
