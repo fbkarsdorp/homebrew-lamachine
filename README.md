@@ -22,6 +22,23 @@ $ brew install frog
 
 ## Troubleshooting
 
+### Linking frogdata
+
+After installing frog and frogdata, link the data using something like:
+
+``` bash
+ln -s /usr/local/opt/frogdata/share/frog/ /usr/local/Cellar/frog/<VERSION-NUMBER>/share
+```
+
+where <VERSION-NUMBER> refers to the installed version of frog. To find out which version
+you're using, execute the following:
+
+``` bash
+brew info frog
+```
+
+### icu4c
+
 All libraries and dependencies should be build with the same underlying icu4c version. When updating a specific component of lamachine fails, please first reinstall all its dependencies. For example, should the installation of ucto fail, but you already have ticcutils and libfolia installed, run:
 
 ```bash
