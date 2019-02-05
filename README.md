@@ -30,7 +30,7 @@ After installing frog and frogdata, link the data using something like:
 ln -s /usr/local/opt/frogdata/share/frog/ /usr/local/Cellar/frog/<VERSION-NUMBER>/share
 ```
 
-where <VERSION-NUMBER> refers to the installed version of frog. To find out which version
+where \<VERSION-NUMBER\> refers to the installed version of frog. To find out which version
 you're using, execute the following:
 
 ``` bash
