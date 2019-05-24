@@ -1,8 +1,8 @@
 class Frogdata < Formula
     desc "Data for Frog NLP toolkit"
     homepage "https://languagemachines.github.io/frog"
-    url "https://github.com/LanguageMachines/frogdata/releases/download/v0.16/frogdata-0.16.tar.gz"
-    sha256 "999994bf39a19b1c32f360a0b15d833a3c3c9bc061812a388043d5bc3665e018"
+    url "https://github.com/LanguageMachines/frogdata/releases/download/v0.17/frogdata-0.17.tar.gz"
+    sha256 "b28ece2901800a47e189ab2a55c276fb326f8d7cab9744da6b1caa0a166e13dd"
 
     depends_on "pkg-config" => :build
 
