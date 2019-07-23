@@ -2,7 +2,7 @@ class Wopr < Formula
     desc "Memory Based Word Predictor/Language Model"
     homepage "http://ilk.uvt.nl/wopr/"
     url "https://github.com/LanguageMachines/wopr/archive/v1.40.7.zip"
-    sha256 "69f9bd6932e6888700fe57bb004074b3929393afc6742a7265a9316435f53338"
+    sha256 "c7eced211af80add3390280db7298f8b6f341c1cb293598391fa2aff619a86be"
 
     depends_on "pkg-config" => :build
     depends_on "automake" => :build
