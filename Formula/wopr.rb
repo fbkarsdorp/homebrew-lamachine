@@ -1,7 +1,7 @@
 class Wopr < Formula
     desc "Memory Based Word Predictor/Language Model"
     homepage "http://ilk.uvt.nl/wopr/"
-    url "https://github.com/LanguageMachines/wopr/archive/v1.40.7.zip"
+    url "https://github.com/LanguageMachines/wopr/releases/download/v1.41/wopr-1.41.tar.gz"
     sha256 "c7eced211af80add3390280db7298f8b6f341c1cb293598391fa2aff619a86be"
 
     depends_on "pkg-config" => :build
