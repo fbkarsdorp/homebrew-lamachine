@@ -10,6 +10,7 @@ class Frog < Formula
     depends_on "timbl"
     depends_on "timblserver"
     depends_on "mbt"
+    depends_on "mbtserver"
     depends_on "frogdata"
     depends_on "ucto"
 
