@@ -1,8 +1,8 @@
 class Timblserver < Formula
   desc "Memory-based learning algorithms"
   homepage "https://languagemachines.github.io/timbl"
-  url "https://github.com/LanguageMachines/timblserver/releases/download/v1.13/timblserver-1.13.tar.gz"
-  sha256 "961ce4c938c0d7332139eb95d7c70bda168c39fde10a62e5565423bdef0ae25e"
+  url "https://github.com/LanguageMachines/timblserver/releases/download/v1.14/timblserver-1.14.tar.gz"
+  sha256 "d6cc1d1bdb7e501ac289daf4fd9c0f5a88c1ca37eb904efc7d3a9bb058ea585e"
 
   depends_on "pkg-config" => :build
   depends_on "timbl"

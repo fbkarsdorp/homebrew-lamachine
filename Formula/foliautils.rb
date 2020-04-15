@@ -1,8 +1,8 @@
 class Foliautils < Formula
   desc "FoLiA Utilities"
   homepage "https://languagemachines.github.io/folia"
-  url "https://github.com/LanguageMachines/foliautils/releases/download/v0.13/foliautils-0.13.tar.gz"
-  sha256 "db489c05fe9ce29757f8dcbe81d002ce490757d1338845af05b20b965587837e"
+  url "https://github.com/LanguageMachines/foliautils/releases/download/v0.14/foliautils-0.14.tar.gz"
+  sha256 "cf9e1b67d9267eb9757041d3a807fbad913b149c33e5677e696a6949f9a3d7a3"
 
   option "without-check", "skip build-time checks (not recommended)"
 
