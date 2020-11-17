@@ -1,8 +1,8 @@
 class Ticcutils < Formula
   desc "Tools for the TiCC Software Stack"
   homepage "https://github.com/LanguageMachines/ticcutils/"
-  url "https://github.com/LanguageMachines/ticcutils/releases/download/v0.24/ticcutils-0.24.tar.gz"
-  sha256 "ed3f26fd7973294f8c908efb362e82fe17fcaa07f8c19202322bb45f39a327af"
+  url "https://github.com/LanguageMachines/ticcutils/releases/download/v0.25/ticcutils-0.25.tar.gz"
+  sha256 "713acaf0ce688fb4ddf8703b343e62be7856cd6b1495409a21c8915bc4225244"
 
   depends_on "pkg-config" => :build
   depends_on 'icu4c'
