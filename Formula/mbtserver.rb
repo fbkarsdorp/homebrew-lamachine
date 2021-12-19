@@ -1,8 +1,8 @@
 class Mbtserver < Formula
   desc "Memory-based tagger - server"
   homepage "https://languagemachines.github.io/mbt"
-  url "https://github.com/LanguageMachines/mbtserver/releases/download/v0.14/mbtserver-0.14.tar.gz"
-  sha256 "6eede7a7b0821c3bc2360bfd47403f7842fe87a119af08f3c17d7b1ad05cd082"
+  url "https://github.com/LanguageMachines/mbtserver/releases/download/v0.15/mbtserver-0.15.tar.gz"
+  sha256 "d2fa38ac3bbeb808dd2519f19c9ee66e0752529e43be14898904bd356e155f56"
 
   depends_on "pkg-config" => :build
   depends_on "timbl"
