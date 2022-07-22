@@ -9,6 +9,9 @@ for recipe in Formula/*.rb; do
     echo "Current Version: ${OLDVERSION}"
     _gituser=LanguageMachines
     _gitname=$(basename $recipe)
+    if [ "$_gitname" = "mbtagger" ]; then
+        _gitname="mbt"
+    fi
     _gitname=${_gitname%.*}
     NEWVERSION=$(curl https://api.github.com/repos/${_gituser}/${_gitname}/releases 2> /dev/null | jq -r '.[0].tag_name | match("\\d(\\.\\d+)+").string')
     echo "Latest Version: ${NEWVERSION}"
