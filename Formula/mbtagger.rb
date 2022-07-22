@@ -1,4 +1,4 @@
-class Mbt < Formula
+class Mbtagger < Formula
     desc "Memory-based tagger"
     homepage "https://languagemachines.github.io/mbt"
     url "https://github.com/LanguageMachines/mbt/releases/download/v3.8/mbt-3.8.tar.gz"

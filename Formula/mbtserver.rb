@@ -6,7 +6,7 @@ class Mbtserver < Formula
 
   depends_on "pkg-config" => :build
   depends_on "timbl"
-  depends_on "mbt"
+  depends_on "mbtagger"
 
     def install
         ENV.cxx11
