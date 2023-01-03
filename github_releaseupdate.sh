@@ -3,17 +3,18 @@
 # Assumes releases are named like v0.1.2 (the v is mandatory)
 
 for recipe in Formula/*.rb; do
-    OLDVERSION=$(grep -oe "v[0-9\.].*\/" $recipe)
+    OLDVERSION=$(grep -oe "v[0-9\.].*/" $recipe)
     OLDVERSION=${OLDVERSION%?} #strip trailing /
     OLDVERSION=${OLDVERSION:1} #strip leading v
     echo "Current Version: ${OLDVERSION}"
     _gituser=LanguageMachines
     _gitname=$(basename $recipe)
+    _gitname=${_gitname%.*}
     if [ "$_gitname" = "mbtagger" ]; then
         _gitname="mbt"
     fi
-    _gitname=${_gitname%.*}
-    NEWVERSION=$(curl https://api.github.com/repos/${_gituser}/${_gitname}/releases 2> /dev/null | jq -r '.[0].tag_name | match("\\d(\\.\\d+)+").string')
+    [ "$_gitname" = "ticcltools" ] && continue #skip for now
+    NEWVERSION=$(curl "https://api.github.com/repos/${_gituser}/${_gitname}/releases" 2> /dev/null | jq -r '.[0].tag_name | match("\\d(\\.\\d+)+").string')
     echo "Latest Version: ${NEWVERSION}"
     if [ "$OLDVERSION" = "$NEWVERSION" ]; then
         echo "Already up to date...">&2

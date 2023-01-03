@@ -1,8 +1,8 @@
 class Mbtagger < Formula
     desc "Memory-based tagger"
     homepage "https://languagemachines.github.io/mbt"
-    url "https://github.com/LanguageMachines/mbt/releases/download/v3.8/mbt-3.8.tar.gz"
-    sha256 "f2576e565a0d0cfc1884483a20bc2c6fa1024e978cd1f85a1a46d5c0554f1a20"
+    url "https://github.com/LanguageMachines/mbt/releases/download/v3.9/mbt-3.9.tar.gz"
+    sha256 "6e29c5ca606df066e24dff6568256a4baec92c5b7dc04dae449ce16cffd93493"
 
     depends_on "pkg-config" => :build
     depends_on "timbl"
