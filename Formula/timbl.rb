@@ -1,8 +1,8 @@
 class Timbl < Formula
   desc "Memory-based learning algorithms"
   homepage "https://languagemachines.github.io/timbl"
-  url "https://github.com/LanguageMachines/timbl/releases/download/v6.8/timbl-6.8.tar.gz"
-  sha256 "da6501b2c84028aebffb2802d7c6b9af4690248fca47c017a70d27df073d56b4"
+  url "https://github.com/LanguageMachines/timbl/releases/download/v6.8.1/timbl-6.8.1.tar.gz"
+  sha256 "c2a2cd321aaa3c8c7edb21a6430c41101847b33c45210cfd9c336e1b749c17a9"
 
   depends_on "pkg-config" => :build
   depends_on "libxml2"
