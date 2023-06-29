@@ -2,7 +2,7 @@ class ColibriCore < Formula
     desc "Colibri Core"
     homepage "https://proycon.github.io/colibri-core"
     url "https://github.com/proycon/colibri-core/archive/refs/tags/v2.5.7.tar.gz"
-    sha256 "27b34ad2114e250220a590c813f0aa28f24f89d458b8055d3405c63711463f79d049069cdb91707c02a650248aacde07a5f98977dc158a511029feb96ef28a2f"
+    sha256 "15150a5544c580cdbef493c989df85447dacde8f9f3c9b024477aa9809ea7a2c"
 
     depends_on "pkg-config" => :build
     depends_on "autoconf" => :build
