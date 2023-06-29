@@ -6,13 +6,12 @@ on:
 
 jobs:
   build:
-    name:
-      runs-on: macos-latest
-      steps: 
-        - name: Build and install all packages
-          run: |
-            brew tap fbkarsdorp/homebrew-lamachine
-            brew install frog
-            brew install colibri-core
+    runs-on: macos-latest
+    steps: 
+      - name: Build and install all packages
+        run: |
+          brew tap fbkarsdorp/homebrew-lamachine
+          brew install frog
+          brew install colibri-core
 
 
