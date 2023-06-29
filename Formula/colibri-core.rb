@@ -9,7 +9,7 @@ class ColibriCore < Formula
     depends_on "automake" => :build
 
     def install
-      system "bash bootstrap"
+      system "bash", "bootstrap"
       system "./configure", "--disable-dependency-tracking",
                             "--disable-silent-rules",
                             "--prefix=#{prefix}"
