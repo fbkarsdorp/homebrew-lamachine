@@ -2,7 +2,8 @@
 
 [![Build Status](https://travis-ci.com/fbkarsdorp/homebrew-lamachine.svg?branch=master)](https://travis-ci.com/fbkarsdorp/homebrew-lamachine)
 
-LaMachine is a software distribution of NLP software developed by the Language Machines research group and CLST (Radboud University Nijmegen), as well as TiCC (Tilburg University). This repository provides a tap with which the software can be installed using homebrew. 
+LaMachine was a software distribution of NLP software developed by the Language Machines research group and CLST (Radboud University Nijmegen), as well as TiCC (Tilburg University). This repository provides a tap with which the software can be installed using homebrew. Although the LaMachine distribution itself is deprecated, this tap for homebrew is still very much relevant to install various NLP software on macOS.
+
 
 ## Install
 
