@@ -1,8 +1,8 @@
 class Libfolia < Formula
   desc "XML annotation format for linguistically annotated language resources"
   homepage "https://proycon.github.io/folia/"
-  url "https://github.com/LanguageMachines/libfolia/releases/download/v2.15/libfolia-2.15.tar.gz"
-  sha256 "e6f31069a13fb87a0c3330ef6037c5dd9df43e9e6f1d22d301f158bab03eafe4"
+  url "https://github.com/LanguageMachines/libfolia/releases/download/v2.17/libfolia-2.17.tar.gz"
+  sha256 "fb77ae7ec0d8eb93f4bf130fd19c745adf06f3544d31e97e17f3d2549bedff29"
 
   option "without-check", "skip build-time checks (not recommended)"
   deprecated_option "without-check" => "without-test"
