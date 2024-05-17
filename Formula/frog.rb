@@ -1,8 +1,8 @@
 class Frog < Formula
     desc "Frog NLP toolkit"
     homepage "https://languagemachines.github.io/frog"
-    url "https://github.com/LanguageMachines/frog/releases/download/v0.32/frog-0.32.tar.gz"
-    sha256 "3c844fe3ef871d5a5bec837a0c063fc3fc7dca664ad1613716782d6e9433d466"
+    url "https://github.com/LanguageMachines/frog/releases/download/v0.33/frog-0.33.tar.gz"
+    sha256 "1fdc26e6c676477ae560f0f641c036a92347ee6b50fa91d900538cdcee09eb5c"
 
     depends_on "pkg-config" => :build
     depends_on "icu4c"
