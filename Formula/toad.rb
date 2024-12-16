@@ -1,8 +1,8 @@
 class Toad < Formula
     desc "Trainer of All Data - Trainer for Frog"
     homepage "https://languagemachines.github.io/frog"
-    url "https://github.com/LanguageMachines/toad/releases/download/v0.8/toad-0.8.tar.gz"
-    sha256 "cdf5f654c7d5c1aaa1d4322de3da8989182896e03993d12fa2b453674a2fc225"
+    url "https://github.com/LanguageMachines/toad/releases/download/v0.9/toad-0.9.tar.gz"
+    sha256 "421cc336be26b8740106c2f5dcb51c66b8131378cebf9ee444efef6fde3fe6f3"
 
     depends_on "pkg-config" => :build
     depends_on "frog"
