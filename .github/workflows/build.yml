@@ -11,7 +11,7 @@ jobs:
       - name: Build and install all packages
         run: |
           brew tap fbkarsdorp/homebrew-lamachine
-          brew install colibri-core
+          #brew install colibri-core
           brew install frog
 
 
