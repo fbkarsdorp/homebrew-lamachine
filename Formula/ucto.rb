@@ -7,7 +7,7 @@ class Ucto < Formula
   option "without-check", "skip build-time checks (not recommended)"
 
   depends_on "pkg-config" => :build
-  depends_on "libtextcat"
+  depends_on "libexttextcat"
   depends_on "icu4c"
   depends_on "ticcutils"
   depends_on "libfolia"
