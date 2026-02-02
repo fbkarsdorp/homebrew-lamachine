@@ -2,7 +2,7 @@ name: Build and install all packages
 
 on:
   push:
-    branches: [master]
+    branches: [master, exttextcat]
 
 jobs:
   build:
@@ -12,7 +12,8 @@ jobs:
         run: |
           export HOMEBREW_FAIL_LOG_LINES=1000
           brew tap fbkarsdorp/homebrew-lamachine
+          brew install libexttextcat
           #brew install colibri-core
-          brew install frog
+          #brew install frog
 
 
