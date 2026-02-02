@@ -1,8 +1,8 @@
 class Ucto < Formula
   desc "Unicode tokenizer"
   homepage "https://languagemachines.github.io/ucto"
-  url "https://github.com/LanguageMachines/ucto/releases/download/v0.35/ucto-0.35.tar.gz"                                                                                                                                                                                        
-  sha256 "34a0e62cbb9b0346ed591b08a046ec2f8a45b6047b5257dd06319d8765cc687e"
+  url "https://github.com/LanguageMachines/ucto/releases/download/v0.36/ucto-0.36.tar.gz"
+  sha256 "c2a79cf2551f276e788159b6a0d842eeccd384f46304c981eb070e2329baf835"
 
   option "without-check", "skip build-time checks (not recommended)"
 
@@ -15,7 +15,7 @@ class Ucto < Formula
 
   def install
     ENV.append "CXXFLAGS", "-D U_USING_ICU_NAMESPACE=1"
-    ENV.append "LDFLAGS", "-ltextcat"
+    #ENV.append "LDFLAGS", "-lexttextcat"
     system "./configure", "--disable-dependency-tracking",
                           "--disable-silent-rules",
                           "--prefix=#{prefix}"
