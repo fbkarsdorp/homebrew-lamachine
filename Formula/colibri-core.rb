@@ -11,7 +11,7 @@ class ColibriCore < Formula
     depends_on "libtool" => :build
 
     def install
-      ENV.cxx17
+      ENV.append "CXXFLAGS", "-std=c++17"
       system "bash", "bootstrap.sh"
       system "./configure", "--disable-dependency-tracking",
                             "--disable-silent-rules",
