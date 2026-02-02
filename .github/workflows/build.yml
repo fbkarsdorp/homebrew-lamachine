@@ -7,12 +7,12 @@ on:
 jobs:
   build:
     runs-on: macos-latest
-    steps: 
+    steps:
       - name: Build and install all packages
         run: |
           export HOMEBREW_FAIL_LOG_LINES=1000
           brew tap fbkarsdorp/homebrew-lamachine
-          #brew install colibri-core
+          brew install colibri-core
           brew install frog
 
 
