@@ -6,8 +6,12 @@ for language guessing."
     sha256 "3c9019759b139653ca74fd2a5f57ab46ab6aa49bb35b64e81e991c2c4aff7b0a"
 
     depends_on "pkg-config" => :build
+    depends_on "automake" => :build
+    depends_on "autoconf" => :build
+    depends_on "libtool" => :build
 
     def install
+      system "./autogen.sh"
       system "./configure", "--disable-dependency-tracking",
                             "--disable-silent-rules",
                             "--prefix=#{prefix}"
