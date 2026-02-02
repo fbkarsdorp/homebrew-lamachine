@@ -12,7 +12,7 @@ jobs:
         run: |
           export HOMEBREW_FAIL_LOG_LINES=1000
           brew tap fbkarsdorp/homebrew-lamachine
-          brew install libexttextcat
+          brew install -v libexttextcat
           #brew install colibri-core
           #brew install frog
 
