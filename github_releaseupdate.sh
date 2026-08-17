@@ -3,6 +3,9 @@
 # Assumes releases are named like v0.1.2 (the v is mandatory)
 
 for recipe in Formula/*.rb; do
+    if [ -n "$1" ] && [ "$(basename "$recipe")" != "$1" ]; then
+        continue;
+    fi
     OLDVERSION=$(grep -oe "v[0-9\.].*/" $recipe)
     OLDVERSION=${OLDVERSION%?} #strip trailing /
     OLDVERSION=${OLDVERSION:1} #strip leading v
